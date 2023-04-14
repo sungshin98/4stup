@@ -39,6 +39,8 @@ https://github.com/sungshin98/4stup/blob/main/TEST-IBI.ipynb
 
 https://github.com/sungshin98/4stup/blob/main/TEST-TEMP.ipynb
 
+https://github.com/sungshin98/4stup/blob/main/TEST-EVAL.ipynb
+
 #LSTM 모델 학습하기 위한 데이터 전처리 전 
 
 https://sungshin98.github.io/4stup/LSTM_data_preprocessing/TEST_DATA
