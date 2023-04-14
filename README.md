@@ -28,9 +28,6 @@ https://sungshin98.github.io/4stup/LSTM_data_preprocessing/emotionEncode.ipynb
 
 https://sungshin98.github.io/4stup/LSTM_data_preprocessing/filescaled.ipynb
 
-#MFCC 분석
-
-
 #LSTM 모델 위한 데이터 MERGE 과정
 
 https://github.com/sungshin98/4stup/blob/main/TEST-EDA.ipynb
