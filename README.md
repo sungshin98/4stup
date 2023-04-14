@@ -11,7 +11,6 @@ https://sungshin98.github.io/4stup/word2vec.ipynb
 
 https://sungshin98.github.io/4stup/LSTM_data_preprocessing/DATA_gender_class.ipynb
 
-
 https://sungshin98.github.io/4stup/LSTM_data_preprocessing/emotionEncode.ipynb
 
 https://sungshin98.github.io/4stup/LSTM_data_preprocessing/filescaled.ipynb
