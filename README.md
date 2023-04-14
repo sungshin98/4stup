@@ -18,3 +18,6 @@ https://sungshin98.github.io/4stup/LSTM_data_preprocessing/DATA_gender_class.ipy
 https://sungshin98.github.io/4stup/LSTM_data_preprocessing/emotionEncode.ipynb
 
 https://sungshin98.github.io/4stup/LSTM_data_preprocessing/filescaled.ipynb
+
+#LSTM 모델 학습하기 위한 데이터 전처리 전 
+https://sungshin98.github.io/4stup/LSTM_data_preprocessing/TEST_DATA
