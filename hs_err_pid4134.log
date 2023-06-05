@@ -1,0 +1,68 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x0000000102a15994, pid=4134, tid=42243
+#
+# JRE version: OpenJDK Runtime Environment JBR-11.0.13.7-1751.21-jcef (11.0.13+7) (build 11.0.13+7-b1751.21)
+# Java VM: OpenJDK 64-Bit Server VM JBR-11.0.13.7-1751.21-jcef (11.0.13+7-b1751.21, mixed mode, tiered, compressed oops, g1 gc, bsd-aarch64)
+# Problematic frame:
+# C  [python3.9+0x20d994]  collect+0xb8
+#
+# No core dump will be written. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please visit:
+#   https://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Dfile.encoding=UTF8 -ea -Xmx1024m 
+
+Host: MacBookAir10,1 arm64 1 MHz, 8 cores, 16G, Darwin 22.5.0
+Time: Mon Jun  5 17:16:00 2023 KST elapsed time: 2.512099 seconds (0d 0h 0m 2s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000015d462800):  JavaThread "Python Reference Queue" daemon [_thread_in_native, id=42243, stack(0x00000002d2e18000,0x00000002d301b000)]
+
+Stack: [0x00000002d2e18000,0x00000002d301b000],  sp=0x00000002d301a740,  free space=2057k
+Native frames: (J=compiled Java code, A=aot compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [python3.9+0x20d994]  collect+0xb8
+C  [python3.9+0x20f32c]  PyGC_Collect+0x94
+C  [_jpype.cpython-39-darwin.so+0x22ff4]  JPGarbageCollection::triggered()+0x48
+C  [_jpype.cpython-39-darwin.so+0x2fc20]  Java_org_jpype_ref_JPypeReferenceNative_wake+0x1c
+j  org.jpype.ref.JPypeReferenceNative.wake()V+0
+j  org.jpype.ref.JPypeReferenceQueue$Worker.run()V+42
+j  java.lang.Thread.run()V+11 java.base@11.0.13
+v  ~StubRoutines::call_stub
+V  [libjvm.dylib+0x3236e4]  JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, Thread*)+0x2dc
+V  [libjvm.dylib+0x322a48]  JavaCalls::call_virtual(JavaValue*, Klass*, Symbol*, Symbol*, JavaCallArguments*, Thread*)+0xec
+V  [libjvm.dylib+0x322b10]  JavaCalls::call_virtual(JavaValue*, Handle, Klass*, Symbol*, Symbol*, Thread*)+0x64
+V  [libjvm.dylib+0x3b658c]  thread_entry(JavaThread*, Thread*)+0x78
+V  [libjvm.dylib+0x671138]  JavaThread::thread_main_inner()+0x80
+V  [libjvm.dylib+0x670f64]  JavaThread::run()+0x128
+V  [libjvm.dylib+0x66eccc]  Thread::call_run()+0x78
+V  [libjvm.dylib+0x572d7c]  thread_native_entry(Thread*)+0x13c
+C  [libsystem_pthread.dylib+0x6fa8]  _pthread_start+0x94
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  org.jpype.ref.JPypeReferenceNative.wake()V+0
+j  org.jpype.ref.JPypeReferenceQueue$Worker.run()V+42
+j  java.lang.Thread.run()V+11 java.base@11.0.13
+v  ~StubRoutines::call_stub
+
+siginfo: si_signo: 11 (SIGSEGV), si_code: 2 (SEGV_ACCERR), si_addr: 0x000000016b5fd6f8
+
+Register to memory mapping:
+
+ x0=0x000000017dcac4b0 points into unknown readable memory: 0x000000014900a8b0 | b0 a8 00 49 01 00 00 00
+ x1=0x0000000000000002 is an unknown value
+ x2=0x00000002d301a870 is pointing into the stack for thread: 0x000000015d462800
+ x3=0x00000002d301a868 is pointing into the stack for thread: 0x000000015d462800
+ x4=0x0 is NULL
+ x5=0x0000a40300000000 is an unknown value
+ x6=0x0000000000000001 is an unknown value
+ x7=0x0 is NULL
+ x8=
